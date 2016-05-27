@@ -33,6 +33,4 @@ This script is under development and not ready to use yet, you have instructions
 
 &nbsp;
 **Supported Devices**
-
-
 Only Samsung Chromebooks 2 Baytrail - WINKY

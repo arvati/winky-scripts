@@ -10,13 +10,13 @@
 #
 
 #globals
-dropbox_url="https://dl.dropboxusercontent.com/u/98309225/"
-flashromcmd="/tmp/flashrom"
-cbfstoolcmd="/tmp/cbfstool"
-preferUSB=false
-useHeadless=false
-addPXE=false
-pxeDefault=false
+#dropbox_url="https://dl.dropboxusercontent.com/u/98309225/"
+#flashromcmd="/tmp/flashrom"
+#cbfstoolcmd="/tmp/cbfstool"
+#preferUSB=false
+#useHeadless=false
+#addPXE=false
+#pxeDefault=false
 
 # Must run as root 
 if [ $(whoami) != "root" ]; then
@@ -35,6 +35,10 @@ This firmware is only valid for Haswell-based Asus/HP/Acer/Dell
 ChromeBoxes with Celeron 2955U/2957U, Core i3-4010U/4030U, Core i7-4600U CPUs
 which are already running my custom coreboot firmware.
 Use on any other device will almost certainly brick it.\n"
+
+# FOCUS ON WINKY
+exit
+
 
 read -p "Do you wish to continue? [y/N] "
 [ "$REPLY" == "y" ] || exit

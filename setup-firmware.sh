@@ -12,8 +12,8 @@
 #
 
 #where the stuff is
-script_url="https://raw.githubusercontent.com/MattDevo/scripts/master/"
-dropbox_url="https://dl.dropboxusercontent.com/u/98309225/"
+script_url="https://github.com/arvati/winky-scripts/raw/master/"
+dropbox_url="https://github.com/arvati/winky-scripts/raw/master/sources/"
 
 #set working dir
 cd /tmp
