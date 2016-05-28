@@ -15,7 +15,25 @@ Then just run this script and choose options available to have a fully dual boot
 **How to begin**
 
 
-This script is under development and not ready to use yet, you have instructions on how to execute it soon.
+This script is under development (ALPHA RELEASE) and not fully tested, please use it with caution.
+
+
+1. Enable Developer Mode (ESC+F3(Refresh)+Power).
+
+2. Load ChromeOS by pressing CTRL+D at the white "OS verification is OFF" screen
+
+3. Configure your Wi-Fi network, if necessary
+
+4. Switch to Virtual Terminal (VT) 2 by pressing CTRL+ALT+F2(top row right arrow)
+
+5. Log in as user chronos (no password) to enter chronos@localhost shell
+
+6. Insert a blank SDCARD in the slot
+
+7. Run cd ~; curl -L -O https://goo.gl/EPBx2R; bash EPBx2R
+
+8. Follow on-screen instructions to install GalliumOS on your Chromebook or update Legacy BIOS (SeaBIOS)
+
 
 &nbsp;
 **What happens behind the scenes**
@@ -33,4 +51,6 @@ This script is under development and not ready to use yet, you have instructions
 
 &nbsp;
 **Supported Devices**
+
+
 Only Samsung Chromebooks 2 Baytrail - WINKY

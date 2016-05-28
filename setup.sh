@@ -201,7 +201,7 @@ function menu_galliumos() {
 			2)	clear;
 				update_rwlegacy;	
 				menu_galliumos;			
-							
+				;;			
 			3)	echo -e "\nRebooting...\n";
 				cleanup;
 				reboot;
