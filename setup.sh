@@ -147,7 +147,7 @@ fi
 packages_install=""
 read -p "Do you wish to install additional Packages ? [Y/n] "
 if [[ "$REPLY" != "n" && "$REPLY" != "N" ]]; then
-	packages_install="-p minecraft -p steam -p kodi -p admin-misc"
+	packages_install="-p minecraft -p steam -p kodi -p admin-misc -p chrome"
 fi
 
 echo_green "\nInstallation is ready to begin.\nThis is going to take some time, so be patient."
