@@ -6,7 +6,7 @@
 #
 
 #define these here for easy updating
-script_date="[2016-05-27] ALPHA"
+script_date="[2016-06-20] ALPHA"
 isChromeOS=true
 isBaytrail=false
 baytrail=('<winky>');
@@ -133,6 +133,7 @@ if [[ "$ubuntu_package" = "" || "$packageValid" = "" ]]; then
 	ubuntu_package="galliumos"
 fi
 #select Ubuntu version
+useBeta=""
 if [ "$ubuntu_package" != "galliumos" ]; then
 	validVersions=('<lts>' '<latest>' '<dev>' '<15.10>' '<15.04>' '<14.10>' '<14.04>');
 	echo -e "\nEnter the Ubuntu version to install. Valid options are `echo ${validVersions[*]}`. 
@@ -142,7 +143,11 @@ If no (valid) version is entered, 'latest' will be used."
 	if [[ "$ubuntu_version" = "" || "$versionValid" = "" ]]; then
 		ubuntu_version="latest"
 	fi
+else
+    read -p "Do you wish use the latest beta version? [Y/n] "
+    [[ "$REPLY" != "n" && "$REPLY" != "N" ]] && useBeta="-r nightly"
 fi
+
 #Install More Packages?
 packages_install=""
 read -p "Do you wish to install additional Packages ? [Y/n] "
@@ -160,7 +165,7 @@ curl -L -s -o chrx ${chrx_url}
 
 #todo: need to give option to choose username, locale and timeshift
 
-sh ./chrx -d ${ubuntu_package} -r ${ubuntu_version} -H ${machine} -U ${user} -L ${locale} -Z ${fuse} -t ${target_disk} -y ${packages_install}
+sh ./chrx -d ${ubuntu_package} -r ${ubuntu_version} -H ${machine} -U ${user} -L ${locale} -Z ${fuse} -t ${target_disk} -y ${packages_install} ${useBeta}
 
 #chrx will end with prompt for user to press enter to reboot
 read -p ""
