@@ -220,11 +220,7 @@ function menu_galliumos() {
 			q)	cleanup;
 				exit;
 				;;
-			\n)	cleanup;
-				exit;
-				;;
-			*)	clear;
-				menu_galliumos;
+			*)	
 				;;
 		esac
 	fi
