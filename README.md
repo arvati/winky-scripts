@@ -30,7 +30,7 @@ This script is under development (ALPHA RELEASE) and not fully tested, please us
 
 6. Insert a blank SDCARD in the slot
 
-7. Run:  `cd ~; wget -O - https://goo.gl/EPBx2R | sudo bash`
+7. Run:  `cd ~; curl -L -O https://goo.gl/EPBx2R; sudo bash EPBx2R 1`
 
 8. Follow on-screen instructions to install GalliumOS on your Chromebook or update Legacy BIOS (SeaBIOS)
 
