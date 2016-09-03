@@ -5,6 +5,9 @@
 # May be freely distributed and modified as needed, as long as proper attribution is given.
 #
 
+#see argument
+arg1=$1
+
 #define these here for easy updating
 script_date="[2016-09-03] BETA"
 isChromeOS=true
@@ -192,6 +195,10 @@ function menu_galliumos() {
     
 	read opt
 	
+	if [ ! -z "$arg1" ]; then
+		opt = ${arg1};
+	fi
+	
 	while [ opt != '' ]
 		do
 		if [[ $opt = "q" ]]; then 
@@ -220,7 +227,11 @@ function menu_galliumos() {
 			q)	cleanup;
 				exit;
 				;;
-			*)	
+			\n)	cleanup;
+				exit;
+				;;
+			*)	clear;
+				menu_galliumos;
 				;;
 		esac
 	fi
