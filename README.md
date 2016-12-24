@@ -54,3 +54,14 @@ This script is under development (ALPHA RELEASE) and not fully tested, please us
 
 
 Only Samsung Chromebooks 2 Baytrail - WINKY
+
+
+
+&nbsp;
+**References**
+
+
+https://johnlewis.ie/
+
+
+https://mrchromebox.tech/
