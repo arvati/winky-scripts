@@ -17,7 +17,7 @@ baytrail=('<winky>');
 #where the stuff is
 chrx_url="https://chrx.org/go"
 source_url="https://github.com/arvati/winky-scripts/raw/master/sources/"
-seabios_baytrail="seabios-byt-mrchromebox_20170602.bin"
+seabios_baytrail="seabios-baytrail-20160419-mattdevo.bin"
 
 #menu text output
 NORMAL=$(echo "\033[m")
