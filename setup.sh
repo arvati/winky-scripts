@@ -9,7 +9,7 @@
 arg1=$1
 
 #define these here for easy updating
-script_date="[2016-09-03] BETA"
+script_date="[2018-04-07] BETA"
 isChromeOS=true
 isBaytrail=false
 baytrail=('<winky>');
@@ -17,7 +17,8 @@ baytrail=('<winky>');
 #where the stuff is
 chrx_url="https://chrx.org/go"
 source_url="https://github.com/arvati/winky-scripts/raw/master/sources/"
-seabios_baytrail="seabios-byt-mrchromebox_20161107.bin"
+#seabios_baytrail="seabios-byt-mrchromebox_20161107.bin"
+seabios_baytrail="seabios-byt-mrchromebox_20170602.bin"
 
 #menu text output
 NORMAL=$(echo "\033[m")
