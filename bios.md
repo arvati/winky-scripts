@@ -17,9 +17,19 @@
         5. Assemble everything back together.    
 3. With the motherboard all connected and screwed in, but the cover removed, turn on the computer.    
 
+Enable Developer Mode    
+Enter Recovery Mode: press/hold ESC and Refresh, then press Power for ~1s; release all 3 keys    
+Press CTRL+D to switch to Developer Mode; confirm when prompted    
+Press CTRL+D on Developer Mode splash screen to boot in Developer Mode    
+On first boot, system will securely wipe all userdata (this takes a few minutes)    
+
 Log in, press [Ctrl]+[Alt]+[T] to open a terminal.    
 Type in "shell" and press [Enter]    
-Type in "cd; curl -LOk mrchromebox.tech/firmware-util.sh && sudo bash firmware-util.sh"    
+
+Or open the terminal window by pressing [Ctrl]+[Alt]+[F2]
+Log in as chronos (not as root).    
+
+Type in ´"cd; curl -LOk mrchromebox.tech/firmware-util.sh && sudo bash firmware-util.sh"´    
 It should give the following result:    
 ![](pictures/fwutil_cros_wp-on.png)    
 If it was successful, you can put the cover back on the Chromebook.    
